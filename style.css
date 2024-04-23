@@ -189,7 +189,7 @@ body {
 
 /* Меняем цвет фона при наведении на кнопку */
 .button input[type="submit"]:hover {
-  background: rgb(0, 224, 15);
+  background: rgb(200, 62, 251);
 }
 
 /* Меняем стили при ширине экрана меньше 800px */
@@ -225,6 +225,10 @@ body {
     width: 100%;
     margin-left: 0;
     text-align: center;
+  }
+
+  .button input[type="submit"]:focus {
+    background: rgb(80, 226, 43);
   }
 }
 .logo {
