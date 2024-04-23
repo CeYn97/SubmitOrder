@@ -235,6 +235,10 @@ body {
   .button input[type="submit"]:active {
     background: rgb(55, 255, 29) !important;
   }
+
+  .button input[type="submit"]:focus {
+    background: rgb(55, 255, 29) !important;
+  }
 }
 .logo {
   position: absolute;
