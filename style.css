@@ -28,7 +28,7 @@ body {
   width: 100%;
   padding-top: 20px;
   padding-bottom: 20px;
-  /* min-height: 100vh; */
+  min-height: 100vh;
   background: #252525;
   display: flex;
   justify-content: center; /* чтобы контейнер */
@@ -153,11 +153,8 @@ body {
   min-height: 50px !important;
 }
 
-/* Отдельно стилизуем поле сообщение */
-.input-box textarea {
-  resize: none; /* чтобы нельзя было менять высоту */
-  padding: 20px;
-  font-family: "Roboto", sans-serif;
+.select-button:valid {
+  color: black;
 }
 
 .select-button-text {
@@ -165,11 +162,6 @@ body {
   min-height: 50px !important;
   width: 100% !important;
   padding: 10px !important;
-}
-
-/* Это контейнер для поля сообщение */
-.message-box {
-  min-height: 110px; /* минимальная высота 110px */
 }
 
 /* Стили для контейнера кнопки */

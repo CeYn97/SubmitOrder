@@ -17,35 +17,10 @@
     <div class="container">
       <!-- content содержит содержимое формы -->
       <div class="content">
-        <!-- Левая колонка: адрес, телефоны, email. Можете добавить свое -->
-        <!--         <div class="left-side">
-          <div class="address details">
-            <i class="fas fa-map-marker-alt"></i>
-
-            <div class="topic">Адрес</div>
-            <div class="text-two">
-              Аптекарский пр-т, д. 2, лит, 3, пом. 10Н, <br />
-              режим работы пн-пт 10:00-19:00
-            </div>
-          </div>
-          <div class="phone details border1">
-            <i class="fas fa-phone-alt"></i>
-            <div class="topic">Телефон</div>
-            <div class="text-one">+7 (812) 210-86-78</div>
-          </div>
-          <div class="email details">
-            <i class="fas fa-envelope"></i>
-            <div class="topic">Email</div>
-            <div class="text-one">info@spb.ithub.ru</div>
-          </div>
-        </div> -->
-
         <!-- Правая колонка: сама форма -->
         <div class="right-side">
           <!-- Заголовок для формы -->
           <div class="topic-text">ПРИЕМНАЯ КОМИСCИЯ</div>
-
-          <!-- Какой-то дополнительный текст -->
           <p>
             Заполните форму, чтобы узнать больше об IThub или подать заявку на
             обучение
@@ -66,7 +41,10 @@
             </div>
             <div class="input-box">
               <p>
-                <select name="list1" class="select-button">
+                <select name="list1" class="select-button" required>
+                  <option value="" disabled selected hidden>
+                    Выберите класс
+                  </option>
                   <option class="select-button-text">7 класс</option>
                   <option class="select-button-text">8 класс</option>
                   <option class="select-button-text">9 класс</option>
@@ -85,11 +63,6 @@
       </div>
     </div>
 
-    <!-- Подключение шрифтовых иконок, можно получить на fontawesome.com -->
-    <script
-      src="https://kit.fontawesome.com/fce9a50d02.js"
-      crossorigin="anonymous"
-    ></script>
     <script src="script.js"></script>
   </body>
 </html>
