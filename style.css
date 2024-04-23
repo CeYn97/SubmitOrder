@@ -1,5 +1,5 @@
 /* Подключение шрифта Roboto */
-@import url("https:/*fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+@import url("https:/fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 
 /* Убираем все отступы */
 * {
@@ -28,7 +28,7 @@ body {
   width: 100%;
   padding-top: 20px;
   padding-bottom: 20px;
-  min-height: 100vh;
+  /* min-height: 100vh; */
   background: #252525;
   display: flex;
   justify-content: center; /* чтобы контейнер */
@@ -176,7 +176,7 @@ body {
 }
 
 /* Стили для самой кнопки */
-.button input[type="button"] {
+.button input[type="submit"] {
   color: #fff;
   font-size: 18px;
   background: rgb(171, 0, 234);
@@ -188,7 +188,7 @@ body {
 }
 
 /* Меняем цвет фона при наведении на кнопку */
-.button input[type="button"]:hover {
+.button input[type="submit"]:hover {
   background: rgb(0, 0, 207);
 }
 

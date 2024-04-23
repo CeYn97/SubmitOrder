@@ -4,11 +4,6 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-    <!-- Подключение сброса стилей -->
-    <link rel="stylesheet" href="reset.css" />
-
-    <!-- Подключение файла стилей -->
     <link rel="stylesheet" href="style.css" />
     <title>Форма обратной связи</title>
   </head>
@@ -26,10 +21,10 @@
             обучение
           </p>
           <!-- Форма обратной связи -->
-          <form action="#">
+          <form action="" method="POST">
             <!-- Каждый input для выравнивания вкладываем в блок input-box -->
             <div class="input-box">
-              <input type="text" placeholder="Ваше имя" />
+              <input type="text" placeholder="Ваше имя" name="name" />
             </div>
             <div class="input-box">
               <input
@@ -37,11 +32,17 @@
                 class="tel"
                 placeholder="+7 (999) 999-99-99"
                 inputmode="tel"
+                name="tel"
               />
             </div>
             <div class="input-box">
               <p>
-                <select name="list1" class="select-button" required>
+                <select
+                  name="list1"
+                  class="select-button"
+                  required
+                  name="class"
+                >
                   <option value="" disabled selected hidden>
                     Выберите класс
                   </option>
@@ -56,7 +57,7 @@
             </div>
             <!-- message-box - в input-box-->
             <div class="button">
-              <input type="button" value="Отправить" />
+              <input type="submit" value="Отправить" />
             </div>
           </form>
         </div>

@@ -39,3 +39,38 @@ window.addEventListener("DOMContentLoaded", function () {
     input.addEventListener("keydown", mask, false);
   });
 });
+
+const BASE_URL = "https://davsrlmdyznopjxkmqaf.supabase.co/rest/v1";
+const PUBLIC_KEY =
+  "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImRhdnNybG1keXpub3BqeGttcWFmIiwicm9sZSI6ImFub24iLCJpYXQiOjE3MTM4Nzc4MzMsImV4cCI6MjAyOTQ1MzgzM30.MYmKNZDiClB94hgAJ6IOq2lS7Zev79_uNNXFmC7Pbek";
+
+const form = document.querySelector("form");
+form.addEventListener("submit", (e) => {
+  e.preventDefault();
+  const name = form.querySelector("input[name=name]").value;
+  const tel = form.querySelector("input[name=tel]").value;
+  const class_ = form.querySelector("select").value;
+  console.log(class_);
+
+  /* console.log({
+    name,
+    tel,
+    class_,
+  }); */
+
+  fetch(`${BASE_URL}/orders`, {
+    method: "POST",
+    headers: {
+      apikey: PUBLIC_KEY,
+      Authorization: `Bearer ${PUBLIC_KEY}`,
+      "Content-Type": "application/json",
+    },
+    body: JSON.stringify({
+      name,
+      phone: tel,
+      class: class_,
+    }),
+  })
+    .then((response) => response.json())
+    .then((json) => console.log(json));
+});
