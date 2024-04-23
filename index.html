@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Подключение сброса стилей -->
+    <link rel="stylesheet" href="reset.css" />
+
+    <!-- Подключение файла стилей -->
+    <link rel="stylesheet" href="style.css" />
+    <title>Форма обратной связи</title>
+  </head>
+  <body>
+    <!-- Контейнер выравнивает по ширине и по центру -->
+    <div class="container">
+      <div class="logo">
+        <img src="Frame_55.png" alt="Логотип компании" />
+      </div>
+      <!-- content содержит содержимое формы -->
+      <div class="content">
+        <!-- Левая колонка: адрес, телефоны, email. Можете добавить свое -->
+        <div class="left-side">
+          <div class="address details">
+            <!-- Вместо классов: название шрифтовых иконок (fontawesome.com) -->
+            <i class="fas fa-map-marker-alt"></i>
+
+            <!-- topic - заголовок, text-one, text-two - текст -->
+            <div class="topic">Адрес</div>
+            <div class="text-one">г. Санкт-Петербург</div>
+            <div class="text-two">
+              Аптекарский пр-т, д. 2, лит, 3, пом. 10Н, 6 минут пешком от м.
+              Петроградская, режим работы пн-пт 10:00-19:00
+            </div>
+          </div>
+          <div class="phone details">
+            <i class="fas fa-phone-alt"></i>
+            <div class="topic">Телефон</div>
+            <div class="text-one">+7 (812) 210-86-78</div>
+          </div>
+          <div class="email details">
+            <i class="fas fa-envelope"></i>
+            <div class="topic">Email</div>
+            <div class="text-one">info@spb.ithub.ru</div>
+          </div>
+        </div>
+
+        <!-- Правая колонка: сама форма -->
+        <div class="right-side">
+          <!-- Заголовок для формы -->
+          <div class="topic-text">ПРИЕМНАЯ КОММИСИЯ</div>
+
+          <!-- Какой-то дополнительный текст -->
+          <p>
+            Узнать больше об IThub, подать заявку на обучение можно онлайн или
+            лично в колледже
+          </p>
+          <!-- Форма обратной связи -->
+          <form action="#">
+            <!-- Каждый input для выравнивания вкладываем в блок input-box -->
+            <div class="input-box">
+              <input type="text" placeholder="Ваше имя" />
+            </div>
+            <div class="input-box">
+              <input value="" class="tel" placeholder="+7 (999) 999-99-99" />
+            </div>
+            <div class="input-box">
+              <p>
+                <select name="list1" class="select-button">
+                  <option class="select-button-text">Выберите из списка</option>
+                  <option class="select-button-text">7 класс</option>
+                  <option class="select-button-text">8 класс</option>
+                  <option class="select-button-text">9 класс</option>
+                  <option class="select-button-text">10 класс</option>
+                  <option class="select-button-text">11 класс</option>
+                  <option class="select-button-text">Другое</option>
+                </select>
+              </p>
+            </div>
+            <!-- message-box - в input-box-->
+            <div class="button">
+              <input type="button" value="Отправить" />
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <!-- Подключение шрифтовых иконок, можно получить на fontawesome.com -->
+    <script
+      src="https://kit.fontawesome.com/fce9a50d02.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="script.js"></script>
+  </body>
+</html>
