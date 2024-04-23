@@ -74,8 +74,9 @@ body {
 
 /* Стили правой колонки */
 .right-side {
-  width: 75%; /* занимает 75% общей ширины */
-  margin-left: 75px;
+  width: 100%; /* занимает 75% общей ширины */
+  margin-left: 0px;
+  text-align: center;
 }
 
 /* Элементы левой колонки: адрес, телефон, email */
@@ -214,6 +215,7 @@ body {
   .right-side {
     width: 100%;
     margin-left: 0;
+    text-align: center;
   }
 }
 .logo {
