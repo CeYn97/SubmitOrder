@@ -232,6 +232,9 @@ body {
     margin-left: 0;
     text-align: center;
   }
+  .button input[type="submit"]:focus {
+    background: rgb(55, 255, 29);
+  }
 }
 .logo {
   position: absolute;
