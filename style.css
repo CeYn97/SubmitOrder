@@ -29,7 +29,7 @@ body {
   padding-top: 20px;
   padding-bottom: 20px;
   /* min-height: 100vh; */
-  background: linear-gradient(45deg, #fff1eb, #ace0f9);
+  background: #252525;
   display: flex;
   justify-content: center; /* чтобы контейнер */
   align-items: center; /* был по центру */
