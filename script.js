@@ -74,3 +74,7 @@ form.addEventListener("submit", (e) => {
     .then((response) => response.json())
     .then((json) => console.log(json));
 });
+
+function change() {
+  document.getElementById("myButton1").value = "Отправлено";
+}
