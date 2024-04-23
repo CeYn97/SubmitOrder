@@ -233,7 +233,7 @@ body {
     text-align: center;
   }
   .button input[type="submit"]:focus {
-    background: rgb(55, 255, 29);
+    background: rgb(55, 255, 29) !important;
   }
 }
 .logo {
