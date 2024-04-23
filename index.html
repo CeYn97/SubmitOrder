@@ -18,19 +18,17 @@
       <!-- content содержит содержимое формы -->
       <div class="content">
         <!-- Левая колонка: адрес, телефоны, email. Можете добавить свое -->
-        <div class="left-side">
+        <!--         <div class="left-side">
           <div class="address details">
-            <!-- Вместо классов: название шрифтовых иконок (fontawesome.com) -->
             <i class="fas fa-map-marker-alt"></i>
 
-            <!-- topic - заголовок, text-one, text-two - текст -->
             <div class="topic">Адрес</div>
             <div class="text-two">
-              Аптекарский пр-т, д. 2, лит, 3, пом. 10Н, режим работы пн-пт
-              10:00-19:00
+              Аптекарский пр-т, д. 2, лит, 3, пом. 10Н, <br />
+              режим работы пн-пт 10:00-19:00
             </div>
           </div>
-          <div class="phone details">
+          <div class="phone details border1">
             <i class="fas fa-phone-alt"></i>
             <div class="topic">Телефон</div>
             <div class="text-one">+7 (812) 210-86-78</div>
@@ -40,17 +38,17 @@
             <div class="topic">Email</div>
             <div class="text-one">info@spb.ithub.ru</div>
           </div>
-        </div>
+        </div> -->
 
         <!-- Правая колонка: сама форма -->
         <div class="right-side">
           <!-- Заголовок для формы -->
-          <div class="topic-text">ПРИЕМНАЯ КОММИСИЯ</div>
+          <div class="topic-text">ПРИЕМНАЯ КОМИСCИЯ</div>
 
           <!-- Какой-то дополнительный текст -->
           <p>
-            Узнать больше об IThub, подать заявку на обучение можно онлайн или
-            лично в колледже
+            Заполните форму, чтобы узнать больше об IThub или подать заявку на
+            обучение
           </p>
           <!-- Форма обратной связи -->
           <form action="#">
@@ -59,7 +57,12 @@
               <input type="text" placeholder="Ваше имя" />
             </div>
             <div class="input-box">
-              <input value="" class="tel" placeholder="+7 (999) 999-99-99" />
+              <input
+                value=""
+                class="tel"
+                placeholder="+7 (999) 999-99-99"
+                inputmode="tel"
+              />
             </div>
             <div class="input-box">
               <p>
