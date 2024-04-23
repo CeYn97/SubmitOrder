@@ -232,7 +232,7 @@ body {
     margin-left: 0;
     text-align: center;
   }
-  .button input[type="submit"]:focus {
+  .button input[type="submit"]:active {
     background: rgb(55, 255, 29) !important;
   }
 }
