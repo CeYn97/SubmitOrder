@@ -191,7 +191,7 @@ body {
 
 /* Меняем цвет фона при наведении на кнопку */
 .button input[type="submit"]:hover {
-  background: rgb(55, 255, 29);
+  background: rgb(202, 76, 248);
 }
 
 .button input[type="submit"]:focus {
