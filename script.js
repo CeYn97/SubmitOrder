@@ -40,9 +40,7 @@ window.addEventListener("DOMContentLoaded", function () {
   });
 });
 
-const BASE_URL = "https://davsrlmdyznopjxkmqaf.supabase.co/rest/v1";
-const PUBLIC_KEY =
-  "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImRhdnNybG1keXpub3BqeGttcWFmIiwicm9sZSI6ImFub24iLCJpYXQiOjE3MTM4Nzc4MzMsImV4cCI6MjAyOTQ1MzgzM30.MYmKNZDiClB94hgAJ6IOq2lS7Zev79_uNNXFmC7Pbek";
+const BASE_URL = "https://CeYn97.pythonanywhere.com";
 
 const form = document.querySelector("form");
 form.addEventListener("submit", (e) => {
@@ -61,14 +59,12 @@ form.addEventListener("submit", (e) => {
   fetch(`${BASE_URL}/orders`, {
     method: "POST",
     headers: {
-      apikey: PUBLIC_KEY,
-      Authorization: `Bearer ${PUBLIC_KEY}`,
       "Content-Type": "application/json",
     },
     body: JSON.stringify({
       name,
       phone: tel,
-      class: class_,
+      classes: class_,
     }),
   })
     .then((response) => response.json())
