@@ -59,7 +59,7 @@ form.addEventListener("submit", (e) => {
   fetch(`${BASE_URL}/orders`, {
     method: "POST",
     headers: {
-      "Content-Type": "application/json",
+      "Content-Type": "text/plain",
     },
     body: JSON.stringify({
       name,
